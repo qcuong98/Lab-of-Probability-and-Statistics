@@ -35,6 +35,3 @@ tPSA = Age
 tPSA[Age <= 30] = 0
 tPSA[30 < Age & Age <= 50] = 1
 tPSA[50 < Age] = 2
-
-#Bai 03
-# TODO
