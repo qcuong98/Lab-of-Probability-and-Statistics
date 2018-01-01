@@ -69,3 +69,12 @@ x[2,]
 x[,2]
 y[1, 2]
 y[, 2:3]
+
+#Bai 09
+x <- data.frame(quakes)
+summary(x$depth)
+summary(x$mag)
+
+y <- data.frame(mtcars)
+mean(y$wt)
+mean(y$mpg)
