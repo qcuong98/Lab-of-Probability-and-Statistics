@@ -36,10 +36,21 @@ for (i in 1:length(age)) {
 id
 
 #Bai 04
-data = read.csv("Data/data11.csv", header = TRUE)
-information <- function(data) {
+df = read.csv("Data/data11.csv", header = TRUE)
 
+information <- function(df) {
+	avg = (df$a + df$b) / 2;
+	df = data.frame("Height" = avg, "Freq" = df$n);
+	
+	h = df$Height;
+	f = df$Freq;
+
+	m = min(h[f != 0]); print(m);
+  	M = max(h[f != 0]); print(M);
+	mh = sum(h * f) / sum(f); print(mh);
+	var = sum(f * (h - mh) ^ 2) / (sum(f) - 1); print(var);
 }
+information(df)
 
 #Bai 05
 phanvi <- function(x, p) {
