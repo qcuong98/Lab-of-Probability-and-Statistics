@@ -48,7 +48,9 @@ information <- function(df) {
 	m = min(h[f != 0]); print(m);
   	M = max(h[f != 0]); print(M);
 	mh = sum(h * f) / sum(f); print(mh);
-	var = sum(f * (h - mh) ^ 2) / (sum(f) - 1); print(var);
+	var = sum(f * (h - mh) ^ 2) / (sum(f) - 1); print(sqrt(var));
+	# chuyen thanh vector khong co tan so
+	# dung min max mean sd
 }
 information(df)
 
