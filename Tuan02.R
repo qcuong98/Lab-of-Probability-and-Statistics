@@ -49,10 +49,12 @@ information <- function(df) {
   	M = max(h[f != 0]); print(M);
 	mh = sum(h * f) / sum(f); print(mh);
 	var = sum(f * (h - mh) ^ 2) / (sum(f) - 1); print(sqrt(var));
+	print(df)
 	# chuyen thanh vector khong co tan so
 	# dung min max mean sd
 }
 information(df)
+print(df)
 
 #Bai 05
 phanvi <- function(x, p) {
